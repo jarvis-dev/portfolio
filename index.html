@@ -502,6 +502,13 @@ https://templatemo.com/tm-531-reflux
     <script src="assets/js/lightbox.js"></script>
     <script src="assets/js/custom.js"></script>
     <script>
+      function run(){
+        var $grid = $('.grid').isotope({
+          itemSelector: '.element-item',
+          layoutMode: 'masonry'   //options: https://isotope.metafizzy.co/layout-modes.html
+        });
+      }
+
       //according to loftblog tut
       $(".main-menu li:first").addClass("active");
 
